@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/33771/Desktop/enonce-android/Ecole2/app/src/main/res/layout-land/activity_video.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/33771/Desktop/enonce-android/Ecole2/app/src/main/res/layout/activity_accueil.xml" value="0.1" />
+        <entry key="..\:/Users/33771/Desktop/enonce-android/Ecole2/app/src/main/res/layout/activity_etudiants.xml" value="0.1693840579710145" />
+        <entry key="..\:/Users/33771/Desktop/enonce-android/Ecole2/app/src/main/res/layout/activity_formation2.xml" value="0.25" />
+        <entry key="..\:/Users/33771/Desktop/enonce-android/Ecole2/app/src/main/res/layout/activity_video.xml" value="0.1693840579710145" />
+        <entry key="..\:/Users/33771/Desktop/enonce-android/Ecole2/app/src/main/res/layout/include_bas.xml" value="0.1693840579710145" />
+        <entry key="..\:/Users/33771/Desktop/enonce-android/Ecole2/app/src/main/res/layout/include_haut.xml" value="0.25" />
+        <entry key="..\:/Users/33771/Desktop/enonce-android/Ecole2/app/src/main/res/layout/view_formation.xml" value="0.1693840579710145" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
