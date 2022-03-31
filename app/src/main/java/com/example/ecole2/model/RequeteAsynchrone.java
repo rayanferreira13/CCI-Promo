@@ -33,8 +33,10 @@ public class RequeteAsynchrone implements IResponseRestCallback {
         if(identifiantRequete == 1){
             Log.i(TAG,"réponse formations");
             List<Formation> formations = (List<Formation>) reponse;
-            Log.i(TAG,"réponse formations =" + formations);
+            Log.i(TAG,"réponse formations=" + formations);
             controleFormation.setFormations(formations);
+        } else if (identifiantRequete == 2){
+            Log.i(TAG, "reponse message");
         }
     }
 }

@@ -15,7 +15,7 @@ import java.util.List;
 
 public class FormationsActivity extends RacineActivity implements AdapterView.OnItemClickListener {
 
-    private static String TAG = "EtudiantsActivity";
+    private static String TAG = "FormationsActivity";
     private ControleFormation controleFormation;
     private List<Formation> formations;
     private ListView liste;
@@ -41,9 +41,10 @@ public class FormationsActivity extends RacineActivity implements AdapterView.On
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Log.i(TAG, "onItemClick = " + position);
-        Log.i(TAG, "formations = " + formations.get(position));
-        Intent myIntent = new Intent(view.getContext(), Formation2Activity.class);
-        startActivity(myIntent);
+        Log.i(TAG,"onItemClick = " + position);
+        controleFormation.setFormation(formations.get(position));
+        Intent intent = new Intent(FormationsActivity.this, Formation2Activity.class);
+        startActivity(intent);
+        Log.i(TAG,"formations = " + formations.get(position));
     }
 }

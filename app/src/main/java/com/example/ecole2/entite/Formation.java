@@ -8,6 +8,7 @@ public class Formation {
     private String videoUrl;
     private int dureeMois;
     private String dateDebut;
+    private String description;
     public Formation() {}
     public Formation(String acronyme, String intitule, String adresseImage, String link, String videoUrl, int dureeMois, String dateDebut) {
         this.intitule = intitule;
@@ -60,6 +61,8 @@ public class Formation {
     public void setDureeMois(int dureeMois) {
         this.dureeMois = dureeMois;
     }
+    public String getDescription() { return description; }
+    public void setDescription(String description) { this.description = description; }
     @Override
     public String toString() {
         return "Formation [acronyme=" + acronyme + ", intitule=" + intitule + ", adresseImage=" + adresseImage
