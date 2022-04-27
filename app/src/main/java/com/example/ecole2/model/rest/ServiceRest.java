@@ -3,6 +3,7 @@ package com.example.ecole2.model.rest;
 import android.util.Log;
 
 import com.example.ecole2.entite.Formation;
+import com.example.ecole2.entite.Message;
 import com.example.ecole2.model.IResponseRestCallback;
 
 import java.util.List;
@@ -48,6 +49,21 @@ public class ServiceRest implements ServiceRestItf {
             @Override
             public void failure(RetrofitError error) {
                 Log.i(TAG, "========= lireFormationsERROR ======= error="+error);
+            }
+        });
+    }
+    @Override
+    public void postMessage(Message messageObj, IResponseRestCallback objetReponse) {
+        ServiceRest.reponse = objetReponse;
+        serviceRest.postMessage(messageObj, new Callback<Void>() {
+            @Override
+            public void success(Void avoid, Response response) {
+                Log.i(TAG, "========= posterMessage = "+ messageObj);
+                reponse.responseRestCallback(messageObj, 2);
+            }
+            @Override
+            public void failure(RetrofitError error) {
+                Log.i(TAG, "========= postMessage ERROR ======= error=" + error);
             }
         });
     }

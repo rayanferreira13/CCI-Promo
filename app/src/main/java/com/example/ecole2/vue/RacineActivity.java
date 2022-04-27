@@ -21,6 +21,8 @@ public class   RacineActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         menu.add(0, 1, Menu.NONE, "Accueil");
         menu.add(0, 2, Menu.NONE, "Les formations");
+        menu.add(0, 3, Menu.NONE, "Nous contacter");
+
         return true;
     }
 
@@ -36,6 +38,11 @@ public class   RacineActivity extends AppCompatActivity {
         else if(itemId == 2) {
             Log.i(TAG, "Les formations");
             Intent intent = new Intent(RacineActivity.this, FormationsActivity.class);
+            startActivity(intent);
+        }
+        else if (itemId==3){
+            Log.i(TAG, "Contact");
+            Intent intent = new Intent(RacineActivity.this, MessageActivity.class);
             startActivity(intent);
         }
         return true;

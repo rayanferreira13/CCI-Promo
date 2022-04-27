@@ -27,6 +27,9 @@
             android:name=".vue.Formation2Activity"
             android:exported="false" />
         <activity
+            android:name=".vue.MessageActivity"
+            android:exported="false" />
+        <activity
             android:name=".vue.AccueilActivity"
             android:exported="true">
             <intent-filter>

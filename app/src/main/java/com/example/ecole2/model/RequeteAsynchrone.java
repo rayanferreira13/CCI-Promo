@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.example.ecole2.controleur.ControleFormation;
 import com.example.ecole2.entite.Formation;
+import com.example.ecole2.entite.Message;
 import com.example.ecole2.model.rest.ServiceRest;
 import com.example.ecole2.model.rest.ServiceRestItf;
 
@@ -38,5 +39,10 @@ public class RequeteAsynchrone implements IResponseRestCallback {
         } else if (identifiantRequete == 2){
             Log.i(TAG, "reponse message");
         }
+    }
+
+    @Override
+    public void RequeteAsynchroneMessage(Message message) {
+
     }
 }
