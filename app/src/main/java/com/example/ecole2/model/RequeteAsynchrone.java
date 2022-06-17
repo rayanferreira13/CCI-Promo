@@ -42,7 +42,9 @@ public class RequeteAsynchrone implements IResponseRestCallback {
     }
 
     @Override
-    public void RequeteAsynchroneMessage(Message message) {
+    public void RequeteAsynchroneMessage(Message message) {;
 
-    }
+        serviceRest = ServiceRest.getInstance();
+        serviceRest.postMessage(message, this);
+        Log.i(TAG, "requete message");}
 }

@@ -1,8 +1,7 @@
 package com.example.ecole2.util;
 
 import junit.framework.TestCase;
-
-public class VerificationMessageTest extends TestCase {
+public class VerificationMessageTestTest extends TestCase {
     VerificationMessage verificationMessage = new VerificationMessage();
 
     public void testIsEmailValid1() {
@@ -26,7 +25,7 @@ public class VerificationMessageTest extends TestCase {
     }
 
     public void testIsEmailValid6() {
-        assertEquals(true, verificationMessage.isNullOrEmpty("test@email.com"));
+        assertEquals(true, verificationMessage.isEmailValid("test@email.com"));
     }
 
     public void testIsNomPrenomValid1() {

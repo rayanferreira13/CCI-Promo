@@ -5,6 +5,7 @@ import android.widget.Toast;
 public class VerificationMessage {
     private boolean isValid;
     Toast toast;
+    private String string;
 
     public VerificationMessage(){}
 
@@ -14,5 +15,12 @@ public class VerificationMessage {
 
     public boolean isNomPrenomValid(String nom, String prenom){
         return nom.matches("^[A-Za-z\\é\\è\\ê\\ë\\ï\\-]+$") && prenom.matches("^[A-Za-z\\é\\è\\ê\\ë\\ï\\-]+$");
+    }
+
+    public boolean isNullOrEmpty(String string){
+        this.string = string;
+        if(string == null) return true;
+        else if(string.isEmpty()) return true;
+        else return false;
     }
 }

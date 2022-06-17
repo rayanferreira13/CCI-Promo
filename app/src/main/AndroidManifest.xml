@@ -30,6 +30,9 @@
             android:name=".vue.MessageActivity"
             android:exported="false" />
         <activity
+            android:name=".vue.FavoriActivity"
+            android:exported="false"/>
+        <activity
             android:name=".vue.AccueilActivity"
             android:exported="true">
             <intent-filter>

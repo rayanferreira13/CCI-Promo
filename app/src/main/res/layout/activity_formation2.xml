@@ -13,6 +13,16 @@
             android:layout_height="match_parent"
             android:baselineAligned="false"
             android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/formationFavoriId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/favorino"
+                android:onClick="@drawable/favori"
+                android:contentDescription="Favori"
+                android:layout_gravity="center_horizontal" />
+
             <TextView
                 android:id="@+id/detailFormationIntitule"
                 style="@style/titre_1"
